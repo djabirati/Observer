@@ -1,0 +1,11 @@
+Pourquoi est-il important d'utiliser le Pattern Observer dans ce type de situation ?
+Le fait d'utiliser Pattern Observer est utile car il permet à la bibliothqèe de notifier les utilisateurs abonnés de l'ajout de nouveau livre.
+Il n'y a aucun lien entre la bibliothèque et l'utilisateur, en cas de modification d'un utilisateur (ajout ou suppression), il n'y aura aucun
+impaxt sur notre classe bibliothèque.
+Que se passerait-il si nous devions gérer des centaines d'utilisateurs dans ce système ?
+Dans le cas de gestion de centaines d'utilisateurs, le système continuerait à envoyer la notification d'ajout de livre mais il se pourrait que
+le traitement soit plus lent car il faut notifier les utilisateurs un par un.
+Comment pourrait-on améliorer la gestion des abonnements pour les utilisateurs qui souhaitent recevoir des notifications uniquement pour certains types de livres ?
+Afin d'améliorer ce système on pourrait ajouter un système de filtre par genre, type de livre ou même nom de l'auteur. La bibliothèque envoie les
+notifications en fonction des préférences choisi par l'utilisateur. Grâce à ça, la bibliothèque vérifierait si l'utilisateur a sélectionné ce filtre
+puis enverrait la notification.
